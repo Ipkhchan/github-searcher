@@ -1,0 +1,119 @@
+/* * {
+  border: 1px solid black;
+} */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --accent-color: #7433F1;
+}
+
+/* UTILITY STYLES */
+.flex {
+  display: flex;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: var(--accent-color);
+  margin: 0;
+  padding: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  width: 30%;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.emptyHeader {
+  width: 10%;
+}
+
+td {
+  padding: 8px 0;
+}
+
+.searchContainer, .favoritesContainer {
+  padding: 30px 3vw;
+  width: 50%;
+  height: 100vh;
+}
+
+.favoritesContainer {
+  background-color: #F3ECFE;
+}
+
+.searchForm {
+  margin-bottom: 40px;
+}
+
+.searchInput {
+  width: 75%;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+}
+
+.searchButton {
+  width: 20%;
+  height: 35px;
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+}
+
+.repoLink {
+  text-decoration: none;
+  color: #000000;
+}
+
+.repoLink:hover {
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 850px) {
+  .lastTag {
+    display: none;
+  }
+
+  .searchInput {
+    width: 60%;
+  }
+
+  .searchButton {
+    font-size: 15px;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .primeLang {
+    display: none;
+  }
+
+  .searchInput {
+    width: 50%;
+  }
+
+  .searchButton {
+    font-size: 15px;
+    width: 40%;
+  }
+}
