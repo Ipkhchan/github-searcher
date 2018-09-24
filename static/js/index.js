@@ -1,7 +1,7 @@
 "use strict";
 
 //INSERT YOUR GITHUB ACCESS TOKEN HERE
-const token = "";
+const token = "021469701199d15e8d5a3fe6cff3e7fb3ede4442";
 
 const searchInput = document.querySelector('.searchInput');
 const searchForm = document.querySelector('.searchForm');
