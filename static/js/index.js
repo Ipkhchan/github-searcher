@@ -12,7 +12,6 @@ let favorites = [];
 
 function addToFavorites(link) {
   favorites.push(searchResults[link.id]);
-  //remove link
   saveFavorites();
   listFavorites();
   checkAlreadyFaved();
@@ -29,7 +28,6 @@ function saveFavorites() {
   localStorage.setItem("favorites", JSON.stringify(favorites));
 }
 
-//don't need to have argument
 function listFavorites() {
   let innerHTML = "";
 
@@ -74,8 +72,6 @@ function listResults(repos) {
   })
 
   resultsDisplay.innerHTML = innerHTML;
-
-  //add link only if not already in favorites list
   checkAlreadyFaved();
 
   document.querySelectorAll('.add').forEach((link) => {
@@ -95,7 +91,6 @@ searchInput.addEventListener("keyup", (e) => {
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  //TODO: use Axios
   $.ajax({
     url: 'https://api.github.com/graphql',
     headers: {
